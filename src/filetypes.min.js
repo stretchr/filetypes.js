@@ -4,6 +4,8 @@
   by Mat Ryer
   v1.0
 
+  https://github.com/stretchr/filetypes.js
+
   Copyright (c) 2014 Stretchr, Inc.
 
 
