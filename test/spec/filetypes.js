@@ -9,7 +9,7 @@ describe("Filetypes.js", function(){
 
     var matches = Stretchr.Filetypes.find("xml");
     expect(matches).not.toBeNull();
-    expect(matches.length).toBe(1);
+    expect(matches.length).toBe(3);
     expect(matches[0].mime, "text/xml");
 
     var matches = Stretchr.Filetypes.find("text/plain");
@@ -17,10 +17,10 @@ describe("Filetypes.js", function(){
     expect(matches.length).toBe(1);
     expect(matches[0].mime, "text/plain");
 
-    var matches = Stretchr.Filetypes.find("text/xml");
+    var matches = Stretchr.Filetypes.find("application/xml");
     expect(matches).not.toBeNull();
     expect(matches.length).toBe(1);
-    expect(matches[0].mime, "text/xml");
+    expect(matches[0].mime, "application/xml");
 
   });
 
@@ -30,10 +30,10 @@ describe("Filetypes.js", function(){
     expect(Stretchr.Filetypes.descriptionFor("text/bollocks")).toBe("Unknown file")
 
     // known
-    expect(Stretchr.Filetypes.descriptionFor("text/plain")).toBe("Text file")
+    expect(Stretchr.Filetypes.descriptionFor("text/plain")).toBe("Text File")
 
     // default
-    expect(Stretchr.Filetypes.descriptionFor("text/xml")).toBe("XML file")
+    expect(Stretchr.Filetypes.descriptionFor("application/xml")).toBe("XML - Extensible Markup Language")
 
   });
 
