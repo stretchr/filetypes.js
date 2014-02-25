@@ -61,7 +61,7 @@
 
     {desc:"Andrew Toolkit",mime:["application/andrew-inset"],ext:["N/A"]},
     {desc:"Applixware",mime:["application/applixware"],ext:["aw"]},
-    {desc:"Atom Syndication Format",mime:["application/atom+xml"],ext:["atom","xml"]},
+    {desc:"Atom Syndication Format",mime:["application/atom+xml"],ext:["atom"]},
     {desc:"Atom Publishing Protocol",mime:["application/atomcat+xml"],ext:["atomcat"]},
     {desc:"Atom Publishing Protocol Service Document",mime:["application/atomsvc+xml"],ext:["atomsvc"]},
     {desc:"Voice Browser Call Control",mime:["application/ccxml+xml,"],ext:["ccxml"]},
@@ -132,7 +132,7 @@
     {desc:"XML Resource Lists Diff",mime:["application/resource-lists-diff+xml"],ext:["rld"]},
     {desc:"XML Resource Lists",mime:["application/rls-services+xml"],ext:["rs"]},
     {desc:"Really Simple Discovery",mime:["application/rsd+xml"],ext:["rsd"]},
-    {desc:"RSS - Really Simple Syndication",mime:["application/rss+xml"],ext:["rss","xml"]},
+    {desc:"RSS - Really Simple Syndication",mime:["application/rss+xml"],ext:["rss"]},
     {desc:"Rich Text Format",mime:["application/rtf"],ext:["rtf"]},
     {desc:"Systems Biology Markup Language",mime:["application/sbml+xml"],ext:["sbml"]},
     {desc:"Server-Based Certificate Validation Protocol - Validation Request",mime:["application/scvp-cv-request"],ext:["scq"]},
