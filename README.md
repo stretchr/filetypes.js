@@ -1,7 +1,7 @@
 filetypes.js
 ============
 
-A complete list of file types and extensions for use in JavaScript.
+A complete list of file types, extensions and mime types in JavaScript.
 
 ## Usage
 
