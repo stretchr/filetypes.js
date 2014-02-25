@@ -744,6 +744,7 @@
 
   ];
   global.Stretchr.Filetypes = {
+
     // find finds all matches for the specified extension or mime type.
     find: function(s) {
       s = s.toLowerCase();
@@ -755,7 +756,7 @@
             matches.push(item);
           }
         } else {
-          if (item.ext.indexOf(s) > -1) {
+          if (item.ext.indexOf(s)>-1) {
             matches.push(item);
           }
         }
@@ -769,10 +770,10 @@
         if (match.desc) {
           return match.desc;
         } else {
-          return match.ext[0].toUpperCase() + " file";
+          return match.ext[0].toUpperCase() + " File";
         }
       }
-      return "Unknown file";
+      return "Unknown File";
     },
 
     mimeFor: function(s) {

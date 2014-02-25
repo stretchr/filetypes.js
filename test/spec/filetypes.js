@@ -27,7 +27,7 @@ describe("Filetypes.js", function(){
   it("should give you a description", function(){
 
     // unknown
-    expect(Stretchr.Filetypes.descriptionFor("text/bollocks")).toBe("Unknown file")
+    expect(Stretchr.Filetypes.descriptionFor("text/bollocks")).toBe("Unknown File")
 
     // known
     expect(Stretchr.Filetypes.descriptionFor("text/plain")).toBe("Text File")
