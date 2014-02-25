@@ -31,6 +31,8 @@
 
     // text
     {"ext": ["txt"], "mime":["text/plain"], "desc": "Text file"},
+
+    // code
     {"ext": ["xml"], "mime":["text/xml"]},
 
     // video
@@ -39,8 +41,8 @@
     {"ext": ["m3u8"], "mime":["video/MP2T"],        "desc": "iPhone Segment Video file"},
     {"ext": ["ts"],   "mime":["video/quicktime"],   "desc": "QuickTime Video file"},
     {"ext": ["3gp"],  "mime":["video/3gpp"],        "desc": "3GP Mobile Video file"},
-    {"ext": ["avi"],  "mime":["video/x-msvideo"],    "desc": "A/V Interleave Video file"},
-    {"ext": ["wmv"],  "mime":["video/x-ms-wmv"],     "desc": "Windows Media"},
+    {"ext": ["avi"],  "mime":["video/x-msvideo"],   "desc": "A/V Interleave Video file"},
+    {"ext": ["wmv"],  "mime":["video/x-ms-wmv"],    "desc": "Windows Media"}
 
   ];
   global.Stretchr.Filetypes = {
@@ -76,7 +78,7 @@
           return match.mime[0];
         }
       }
-      return "application/" + s;
+      return "application/x-" + s;
     }
 
   };

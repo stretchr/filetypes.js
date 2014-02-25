@@ -43,7 +43,7 @@ describe("Filetypes.js", function(){
     expect(Stretchr.Filetypes.mimeFor("txt")).toBe("text/plain");
 
     // default
-    expect(Stretchr.Filetypes.mimeFor("monkey")).toBe("application/monkey");
+    expect(Stretchr.Filetypes.mimeFor("monkey")).toBe("application/x-monkey");
 
   });
 
