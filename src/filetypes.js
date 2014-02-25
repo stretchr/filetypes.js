@@ -773,7 +773,7 @@
           return match.ext[0].toUpperCase() + " File";
         }
       }
-      return "Unknown File";
+      return s.toUpperCase() + " File";
     },
 
     mimeFor: function(s) {
