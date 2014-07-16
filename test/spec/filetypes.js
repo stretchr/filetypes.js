@@ -9,7 +9,7 @@ describe("Filetypes.js", function(){
 
     var matches = Stretchr.Filetypes.find("xml");
     expect(matches).not.toBeNull();
-    expect(matches.length).toBe(3);
+    expect(matches.length).toBe(1);
     expect(matches[0].mime, "text/xml");
 
     var matches = Stretchr.Filetypes.find("text/plain");
@@ -44,6 +44,16 @@ describe("Filetypes.js", function(){
 
     // default
     expect(Stretchr.Filetypes.mimeFor("monkey")).toBe("application/x-monkey");
+
+  });
+
+  it("should give you an extension", function() {
+
+    // known
+    expect(Stretchr.Filetypes.extensionFor("text/plain")).toBe("txt");
+
+    // unknown
+    expect(Stretchr.Filetypes.extensionFor("vrcca/plain")).toBe(null);
 
   });
 
