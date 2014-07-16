@@ -42,6 +42,8 @@
     Stretchr.Filetypes.mimeFor("txt")
     //= "text/plain"
 
+    Stretchr.Filetypes.extensionFor("text/plain")
+    //= "txt"
 
 */
 
@@ -786,6 +788,14 @@
         }
       }
       return "application/x-" + s;
+    },
+
+    extensionFor: function(s) {
+      var match = this.find(s)[0];
+      if (match && match.ext && match.ext[0]) {
+          return match.ext[0];
+      }
+      return null;
     }
 
   };

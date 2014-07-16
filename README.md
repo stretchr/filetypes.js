@@ -14,4 +14,7 @@ Stretchr.Filetypes.descriptionFor("text/plain");
 
 Stretchr.Filetypes.mimeFor("txt");
 //= "text/plain"
+
+Stretchr.Filetypes.extensionFor("text/plain")
+//= "txt"
 ```
